@@ -68,3 +68,13 @@ const temps = [0, 10, 20, 30, 40];
 // Formula: (C * 9/5) + 32
 const newTemps = temps.map((temp) => (temp * 9) / 5 + 32);
 console.log(newTemps);
+
+// Challenge 8: Pass the threshold
+const scores = [45, 82, 60, 37, 91, 55, 78];
+// 1. Get only scores that are 60 or above
+const pass = scores.filter((score) => score >= 60);
+console.log(pass);
+// 2. Get only scores below 60 (failing)
+const fail = scores.filter((score) => score < 60);
+console.log(fail);
+// Log both arrays
